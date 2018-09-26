@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SF TransRobotics';
+    src: url('SFTransRobotics-Italic.eot');
+    src: url('SFTransRobotics-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SFTransRobotics-Italic.woff2') format('woff2'),
+        url('SFTransRobotics-Italic.woff') format('woff'),
+        url('SFTransRobotics-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
