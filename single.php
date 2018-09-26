@@ -42,6 +42,7 @@ get_header(); ?>
               </div>
             </div>
           </div>
+          <?php comments_template() ?>
           <?php endwhile; endif;?>
           
         </div>
