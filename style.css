@@ -1125,3 +1125,27 @@ iframe {
 	height: auto;
 	}
 }
+
+
+.wrapper_nav .navbar-expand-lg .navbar-nav {
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.navbar_left_wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.navbar_left_wrapper .social-icons {
+	margin-top: 1px;
+}
+
+#masthead .spam-free {
+	margin-bottom: 7px;
+}
