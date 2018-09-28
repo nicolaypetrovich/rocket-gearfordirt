@@ -5,11 +5,11 @@ Theme Name: GFL
 @charset "utf-8";
 /* CSS Document */
 
-
-body {
+body, html {
 	font-family: 'Helvetica', sans-serif;
 	overflow-x:hidden;
 }
+
  @font-face {
  font-family: 'SF-TransRobotics-Italic';
  src: url('fonts/SFT/SFTransRobotics-Italic.eot');
@@ -47,6 +47,16 @@ body {
 @font-face {
   font-family: 'SerpentineDBol_Italic';
   src: URL('fonts/serpentine/SerpentineDBol_Italic.ttf') format('truetype');
+}
+
+h2 {
+	font-size: 20px;
+	font-family: 'SerpentineDBol_Italic';
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 
@@ -238,7 +248,7 @@ ul.aliiaqwq {
 	display:block;
 	overflow:hidden;
 }
-h3.img-tittle {
+p.img-tittle {
 	float: left;
 	padding: 30px 30px;
 	color: #fff;
@@ -499,6 +509,9 @@ h5.mt-0 {
 .row-aling {
 	font-family: 'Futura Md BT';
 	justify-content:center;
+	padding: 0 5px !important;
+    max-width: 100%;
+    margin: auto;
 }
 
 .header-thumbs {
@@ -592,7 +605,7 @@ h5.mt-0 {
 .section_left {
 	margin-bottom: 10px;
 }
-h3.img-tittle {
+p.img-tittle {
 	font-size: 22px;
 	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;

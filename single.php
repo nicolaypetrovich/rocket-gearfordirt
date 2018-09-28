@@ -18,7 +18,7 @@ get_header(); ?>
       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
         <div class="section_left">
           <div class="frist_img_sec">
-            <h3 class="img-tittle"><?php $category = get_the_category(); echo (!empty($category)) ? 'Category: '.$category[0]->cat_name:'';?></h3>
+            <p class="img-tittle"><?php $category = get_the_category(); echo (!empty($category)) ? 'Category: '.$category[0]->cat_name:'';?></p>
             <img src="<?php echo get_template_directory_uri().'/images/biker icon.png'?>" class="biker_a1"> </div>
         </div>
         <div class="thums_allqw1">
