@@ -7,7 +7,7 @@ Theme Name: GFL
 
 body, html {
 	font-family: 'Helvetica', sans-serif;
-	overflow-x:hidden;
+	overflow-x: hidden !important;
 }
 
  @font-face {
