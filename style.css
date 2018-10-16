@@ -1177,3 +1177,50 @@ iframe {
 	height: auto;
 	width: 100%;
 }
+
+
+@media (max-width: 1000px) {
+
+.header__logo {
+	margin-top: -20px;
+}
+
+}
+
+@media (max-width: 918px) {
+
+.gallery-section {
+	padding-top: 212px;
+}
+
+}
+
+@media (max-width: 770px) {
+
+.mobile-logo-container {
+	justify-content: flex-end;
+	position: relative;
+}
+.mobile-logo-container img {
+	display: none;
+}
+
+.header__flag {
+	max-width: 360px;
+	background-size: contain;
+}
+
+.newsletter-section {
+	margin-top: 130px;
+}
+.header__logo {
+	max-width: 280px;
+	margin-top: -80px;
+}
+
+#masthead {
+	height: 110px;
+}
+
+
+}
