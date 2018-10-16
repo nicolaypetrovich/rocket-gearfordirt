@@ -26,6 +26,7 @@ language_attributes(); ?> class="no-js no-svg">
 bloginfo('charset'); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
@@ -35,14 +36,14 @@ wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<!-- <header id="masthead" class="site-header" role="banner" style="background: url('<?=home_url();?>/wp-content/themes/GFL/images/header-bg.png');"> -->
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header" role="banner" style="background: url('<?=home_url();?>/wp-content/themes/GFL/images/header-bg.png');">
+<!-- <header id="masthead" class="site-header" role="banner"> -->
   <div class="header__flag">
     <img src="<?php echo get_template_directory_uri(); ?>/images/logoTML-03.png" alt="" class="header__logo">
   </div>
 <section class="for-desktop">
   <div class="wrapper_nav">
-  <a href="https://gearfordirt.com" class="logo-link"></a>
+  <a href="/" class="logo-link"></a>
     <nav class="navbar navbar-expand-lg navbar-light navaling-end nav-custom">
       <div class="container"> 
         <?php $logo = $theme_options['header_logo']; ?>
