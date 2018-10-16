@@ -1,5 +1,6 @@
 <?php
 global $theme_options;
+/* <?php echo get_temlate_directory_uri(); ?> */
 
 /**
  * The header for our theme
@@ -34,7 +35,11 @@ wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<!-- <header id="masthead" class="site-header" role="banner" style="background: url('<?=home_url();?>/wp-content/themes/GFL/images/header-bg.png');"> -->
 <header id="masthead" class="site-header" role="banner">
+  <div class="header__flag">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logoTML-03.png" alt="" class="header__logo">
+  </div>
 <section class="for-desktop">
   <div class="wrapper_nav">
   <a href="https://gearfordirt.com" class="logo-link"></a>

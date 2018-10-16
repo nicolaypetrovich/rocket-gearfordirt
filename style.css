@@ -299,11 +299,11 @@ h2.pagination-tittle {
 	color: #dc0000;
 }
 .footer_sec {
-	background-image: url('https://gearfordirt.com/wp-content/uploads/2018/08/main-footer.png')!important;
 	width: 100%;
 	margin-top: 28px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background: url('https://gearfordirt.rocketcompany.website/wp-content/uploads/2018/08/main-footer.png');
 }
 h5.footer_hed {
 	margin: 0px;
@@ -725,7 +725,7 @@ h5.footer_hed a {
 }
 .gallery-section {
 	background: url('https://gearfordirt.com/wp-content/uploads/2018/08/BA1.png');
-	padding-top: 15px;
+	padding-top: 182px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -827,9 +827,13 @@ li.sing.up {
 	text-transform: lowercase;
 }
 #masthead {
-	background: url('https://gearfordirt.com/wp-content/uploads/2018/08/intern-page.png');
+	position: relative;
 	background-repeat: no-repeat;
-	min-height:242px;
+	background-size: cover !important;
+	min-height: auto;
+	height: 75px;
+	background: url(https://gearfordirt.rocketcompany.website/wp-content/themes/GFL/images/header-bg.png);
+    background-repeat: no-repeat !important;
 }
 .section_left {
 /*box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.7);*/
@@ -1148,4 +1152,28 @@ iframe {
 
 #masthead .spam-free {
 	margin-bottom: 7px;
+}
+.header__flag {
+	max-width: 496px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 244px;
+	background: url(images/header-flag.png) no-repeat;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+.header__logo {
+	margin-top: -60px;
+	max-width: 385px;
+	height: auto;
+	width: 100%;
 }

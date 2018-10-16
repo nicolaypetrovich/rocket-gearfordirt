@@ -32,7 +32,8 @@
 
 		
 
-<footer id="colophon" class="footer_sec">
+<!-- <footer id="colophon" class="footer_sec" style="background-image: url('<?=home_url();?>/wp-content/uploads/2018/08/main-footer.png')!important;"> -->
+  <footer id="colophon" class="footer_sec">
 
 	<div class="container">		
 
