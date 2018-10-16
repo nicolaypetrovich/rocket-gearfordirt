@@ -1224,3 +1224,50 @@ iframe {
 
 
 }
+
+@media (max-width: 680px) {
+
+
+.header__flag {
+	max-width: 280px;
+	    background-size: contain;
+}
+.header__logo {
+    max-width: 210px;
+    margin-top: -132px;
+}
+
+.title-span {
+	max-width: 50%;
+}
+
+}
+
+@media (max-width: 595px) {
+
+.newsletter-section {
+    margin-top: 88px;
+}
+
+.header__logo {
+    max-width: 171px;
+    margin-top: -136px;
+}
+
+.header__flag {
+    max-width: 230px;
+    background-size: contain;
+}
+#masthead {
+	height: 96px;
+}
+.title-span {
+	max-width: 60%;
+}
+
+}
+
+
+@media (max-width: 520px) {
+	
+}
