@@ -49,13 +49,13 @@ body, html {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 24px;
 	font-family: 'SerpentineDBol_Italic';
     margin-bottom: 16px;
     padding-bottom: 25px;
 }
 h3 {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
 	text-decoration: underline;
 	font-family: 'SerpentineDBol_Italic';
@@ -972,10 +972,11 @@ ul#menu-footer {
 	display: flex;
 	list-style: none;
 	margin: 0;
+	padding-left: 0;
 }
 .footer-1 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items:center;
 	padding: 22px 0;
 }
@@ -986,7 +987,7 @@ ul#menu-footer li {
 	color:#fff;
 }
 .menu-footer-container {
-	margin-left:auto;
+	margin-left: 0;
 }
  ul#menu-footer li:first-child a::after {
  content: '|';
@@ -1190,3 +1191,7 @@ iframe {
 	font-family: unset;
 	font-size: unset;
 } */
+
+.single h3.card-text {
+	font-size: 24px !important;
+}
