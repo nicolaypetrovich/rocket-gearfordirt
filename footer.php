@@ -32,13 +32,15 @@
 
 		
 
-<footer id="colophon" class="footer_sec">
+<footer id="colophon" class="footer_sec" style="background-image: url('<?=home_url();?>/wp-content/uploads/2018/08/main-footer.png')!important;">
+<!--   <footer id="colophon" class="footer_sec"> -->
 
 	<div class="container">		
 
 <div class="footer-1">
 
     <div class="footer-copy">Copyright 2018 Gearfordirt.com </div>
+    <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=rlrAtfS3u0dQUSyQvoIlmLFxkXwCfyFPyWDXJrZzqFk65ggek6FJ10JwGdSu"></script></span>
               <?php
 
 wp_nav_menu(array(

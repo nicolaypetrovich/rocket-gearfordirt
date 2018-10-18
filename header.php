@@ -1,5 +1,6 @@
 <?php
 global $theme_options;
+/* <?php echo get_temlate_directory_uri(); ?> */
 
 /**
  * The header for our theme
@@ -25,6 +26,7 @@ language_attributes(); ?> class="no-js no-svg">
 bloginfo('charset'); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
@@ -34,35 +36,44 @@ wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header" role="banner" style="background: url('<?=home_url();?>/wp-content/themes/GFL/images/header-bg.png');">
+<!-- <header id="masthead" class="site-header" role="banner"> -->
+  <div class="header__flag">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logoTML-03.png" alt="" class="header__logo">
+  </div>
 <section class="for-desktop">
   <div class="wrapper_nav">
-  <a href="https://gearfordirt.com" class="logo-link"></a>
+  <a href="/" class="logo-link"></a>
     <nav class="navbar navbar-expand-lg navbar-light navaling-end nav-custom">
       <div class="container"> 
         <?php $logo = $theme_options['header_logo']; ?>
         <div class="header-left"> <a class="navbar-brand" href="<?php echo site_url(); ?>"> <img src="<?php echo $logo['url']; ?>" class="img-fluid"></a></div>
         <div class="header-right">
           <div class="collapse navbar-collapse custom-nav-margin" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"> <a class="link-top" href="#">#1 For Gear Reviews, Riding Tips & Other Cool Dirt Bike Stuff! <span class="sr-only">(current)</span></a> </li>
+            <ul class="navbar-nav ml-auto header-navbar">
+              <li class="nav-item header__title active"> <a class="link-top" href="#">#1 For Gear Reviews, Riding Tips & Other Cool Dirt Bike Stuff! <span class="sr-only">(current)</span></a> </li>
+             <div class="navbar_left_wrapper">
+               
               <li class="nav-item">
-                <div class="search-container">
-                  <form role="search" action="<?php echo site_url('/'); ?>" method="get">
-                    <input class="search-custom" type="search" name="s" placeholder=""/>
-                    <input type="hidden"  />
-                    <!-- // hidden 'your_custom_post_type' value -->
-                    
-                    <button type="submit"><i class="fa fa-search" style="color:#fff;"></i></button>
-                  </form>
-                </div>
-              </li>
+                  <div class="search-container">
+                    <form role="search" action="<?php echo site_url('/'); ?>" method="get">
+                      <input class="search-custom" type="search" name="s" placeholder=""/>
+                      <input type="hidden"  />
+                      <!-- // hidden 'your_custom_post_type' value -->
+                      
+                      <button type="submit"><i class="fa fa-search" style="color:#fff;"></i></button>
+                    </form>
+                  </div>
+                </li>
+              <ul class="social-icons">
+                <li><a href="#"><em class="fab fa-youtube"></em></a></li>
+                <li><a href="#"><em class="fa fa-instagram"></em></a></li>
+              </ul>
+
+             </div>
+
             </ul>
-	<ul class="social-icons">
-		<li><a href="#"><em class="fab fa-youtube"></em></a></li>
-		<li><a href="#"><em class="fa fa-instagram"></em></a></li>
-	</ul>
-            <ul class="social" >
+	            <ul class="social" >
               <li>
                 <?php
 		$google = $theme_options['footer_google'];
@@ -96,9 +107,11 @@ wp_head(); ?>
       </div>
     </nav>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light nav2_bottam">
+  <nav class="navbar-form-header navbar navbar-expand-lg navbar-light nav2_bottam">
     <div class="container">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-form-wrapper">
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
       
       <ul class="navbar-nav aliiaqwq ml-auto">
         
@@ -111,14 +124,16 @@ wp_head(); ?>
           <div>
           
         <?php
-	wp_nav_menu(array(
-		'theme_location' => 'custom',
-		'menu_class' => 'custom-menu','item_sep' => '&#x7c;'
-	)); ?>
-	
+  wp_nav_menu(array(
+    'theme_location' => 'custom',
+    'menu_class' => 'custom-menu','item_sep' => '&#x7c;'
+  )); ?>
+  
           </div>
           <div> <button class="submit-btn newsletter-submit">Subscribe!</button> </div>
         </div>
+      </div>
+
       </div>
     </div>
   </nav>

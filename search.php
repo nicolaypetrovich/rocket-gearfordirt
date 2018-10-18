@@ -1,4 +1,4 @@
-<?php
+p<?php
 /**
  * The template for displaying search results pages
  *
@@ -19,15 +19,15 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
         <div class="section_left">
           <div class="frist_img_sec">
-            <h3 class="img-tittle"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
+            <p class="img-tittle"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></p>
           </div>
         </div>
         <?php else : ?>
         <div class="section_left">
           <div class="frist_img_sec">
-            <h3 class="img-tittle">
+            <p class="img-tittle">
               <?php _e( 'Nothing Found', 'twentyseventeen' ); ?>
-            </h3>
+            </p>
           </div>
         </div>
         <?php endif; ?>

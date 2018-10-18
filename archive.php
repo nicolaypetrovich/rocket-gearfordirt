@@ -20,7 +20,7 @@ get_header(); ?>
   <?php if ( have_posts() ) : ?>
         <div class="frist_img_sec">
         <?php
-				the_archive_title( '<h3 class="img-tittle">', '</h3>' );
+				the_archive_title( '<p class="img-tittle">', '</p>' );
 				//the_archive_description( '<div class="taxonomy-description">', '</div>' );
 			?>
            
