@@ -1194,4 +1194,5 @@ iframe {
 
 .single h3.card-text {
 	font-size: 24px !important;
+	text-decoration: none !important;
 }
