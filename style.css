@@ -5,11 +5,11 @@ Theme Name: GFL
 @charset "utf-8";
 /* CSS Document */
 
-
-body {
+body, html {
 	font-family: 'Helvetica', sans-serif;
-	overflow-x:hidden;
+	overflow-x: hidden !important;
 }
+
  @font-face {
  font-family: 'SF-TransRobotics-Italic';
  src: url('fonts/SFT/SFTransRobotics-Italic.eot');
@@ -17,7 +17,6 @@ body {
  font-weight: normal;
  font-style: italic;
 }
-
 
 @font-face {
   font-family: 'TransRobotics';
@@ -47,6 +46,21 @@ body {
 @font-face {
   font-family: 'SerpentineDBol_Italic';
   src: URL('fonts/serpentine/SerpentineDBol_Italic.ttf') format('truetype');
+}
+
+h2 {
+	font-size: 24px;
+	font-family: 'SerpentineDBol_Italic';
+    margin-bottom: 16px;
+    padding-bottom: 25px;
+}
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: 'SerpentineDBol_Italic';
+    margin-bottom: 16px;
+    padding-bottom: 25px;
 }
 
 
@@ -238,7 +252,7 @@ ul.aliiaqwq {
 	display:block;
 	overflow:hidden;
 }
-h3.img-tittle {
+p.img-tittle {
 	float: left;
 	padding: 30px 30px;
 	color: #fff;
@@ -289,11 +303,11 @@ h2.pagination-tittle {
 	color: #dc0000;
 }
 .footer_sec {
-	background-image: url('https://gearfordirt.com/wp-content/uploads/2018/08/main-footer.png')!important;
 	width: 100%;
 	margin-top: 28px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background: url('https://gearfordirt.rocketcompany.website/wp-content/uploads/2018/08/main-footer.png');
 }
 h5.footer_hed {
 	margin: 0px;
@@ -499,6 +513,9 @@ h5.mt-0 {
 .row-aling {
 	font-family: 'Futura Md BT';
 	justify-content:center;
+	padding: 0 5px !important;
+    max-width: 100%;
+    margin: auto;
 }
 
 .header-thumbs {
@@ -592,7 +609,7 @@ h5.mt-0 {
 .section_left {
 	margin-bottom: 10px;
 }
-h3.img-tittle {
+p.img-tittle {
 	font-size: 22px;
 	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;
@@ -712,7 +729,7 @@ h5.footer_hed a {
 }
 .gallery-section {
 	background: url('https://gearfordirt.com/wp-content/uploads/2018/08/BA1.png');
-	padding-top: 15px;
+	padding-top: 182px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -814,9 +831,13 @@ li.sing.up {
 	text-transform: lowercase;
 }
 #masthead {
-	background: url('https://gearfordirt.com/wp-content/uploads/2018/08/intern-page.png');
+	position: relative;
 	background-repeat: no-repeat;
-	min-height:242px;
+	background-size: cover !important;
+	min-height: auto;
+	height: 75px;
+	background: url(https://gearfordirt.rocketcompany.website/wp-content/themes/GFL/images/header-bg.png);
+    background-repeat: no-repeat !important;
 }
 .section_left {
 /*box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.7);*/
@@ -951,10 +972,11 @@ ul#menu-footer {
 	display: flex;
 	list-style: none;
 	margin: 0;
+	padding-left: 0;
 }
 .footer-1 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items:center;
 	padding: 22px 0;
 }
@@ -965,7 +987,7 @@ ul#menu-footer li {
 	color:#fff;
 }
 .menu-footer-container {
-	margin-left:auto;
+	margin-left: 0;
 }
  ul#menu-footer li:first-child a::after {
  content: '|';
@@ -1092,11 +1114,11 @@ ul#menu-footer li a:hover {
 .single .card-body.aaqqww  h6 {
 	font-family: SerpentineDBol_Italic !important;
 }
-.single .card-body.aaqqww strong {
+/* .single .card-body.aaqqww strong {
 	font-family: SerpentineDBol_Italic !important;
 	font-size: 21pt !important;
 	font-weight: 900;
-}
+} */
 /***** Vektor Media - fix image and youtube videos width on mobile  *****/
 .single figure,
 .single .card-body-wrapper img  { 
@@ -1111,4 +1133,66 @@ iframe {
 	max-width: 100%;
 	height: auto;
 	}
+}
+
+
+.wrapper_nav .navbar-expand-lg .navbar-nav {
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.navbar_left_wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.navbar_left_wrapper .social-icons {
+	margin-top: 1px;
+}
+
+#masthead .spam-free {
+	margin-bottom: 7px;
+}
+.header__flag {
+	max-width: 496px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 244px;
+	background: url(images/header-flag.png) no-repeat;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+.header__logo {
+	margin-top: -6px;
+	max-width: 465px;
+	height: auto;
+	width: 100%;
+}
+
+.header-thumbs {
+	margin-top: 170px;
+}
+
+/* .single .card-body.aaqqww strong {
+	font-family: unset;
+	font-size: unset;
+} */
+
+.single h3.card-text {
+	font-size: 24px !important;
+	text-decoration: none !important;
 }
