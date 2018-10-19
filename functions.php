@@ -1198,3 +1198,23 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
+// Add custom Fonts to the Fonts list
+if ( ! function_exists( 'am_add_google_fonts_array_to_tiny_mce' ) ) {
+    function am_add_google_fonts_array_to_tiny_mce( $initArray ) {
+        $initArray['font_formats'] = 'Serpentine=SerpentineDBol_Italic;Lato=Lato;Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats';
+            return $initArray;
+    }
+}
+add_filter( 'tiny_mce_before_init', 'am_add_google_fonts_array_to_tiny_mce' );
+
+function load_custom_fonts_frontend() { ?>
+<style>
+	@font-face {
+		font-family: 'SerpentineDBol_Italic';
+		src: URL('<?=get_template_directory_uri();?>/fonts/serpentine/SerpentineDBol_Italic.ttf') format('truetype');
+	}
+</style>
+
+<?php }
+add_action('wp_head', 'load_custom_fonts_frontend');
+add_action('admin_head', 'load_custom_fonts_frontend');
