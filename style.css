@@ -72,7 +72,12 @@ h3 {
 .container {
 	position: relative;
 }
-
+.entry-title {
+	font-size: 36px;
+	font-family: 'SerpentineDBol_Italic';
+	margin-bottom: 16px;
+	padding-bottom: 25px;
+}
 .topnav a {
 	float: left;
 	display: block;

@@ -35,11 +35,13 @@
 		foreach( $categories as $category ) { 
 		$image = get_field('image', $category->taxonomy . '_' . $category->term_id );
 		?>
-              <div class="card card-ali2" style=""> <img class="card-img-top card-image" src="<?php echo $image['url']; ?>" alt="Card image cap">
-                <div class="card-body btn-glay" style="padding:0px">
-                  <button class="gllary-btn">
-                  <a href="<?php echo get_term_link( $category->term_id ); ?>"> <?php echo $category->name ;?></a>
-                  </button>
+                <div class="card card-ali2" style="">
+                    <a href="<?php echo get_term_link( $category->term_id ); ?>">
+                    <img class="card-img-top card-image" src="<?php echo $image['url']; ?>" alt="Card image cap"></a>
+                    <div class="card-body btn-glay" style="padding:0px">
+                    <button class="gllary-btn">
+                        <a href="<?php echo get_term_link( $category->term_id ); ?>"> <?php echo $category->name ;?>
+                    </button>
                 </div>
               </div>
               <?php } ?>
