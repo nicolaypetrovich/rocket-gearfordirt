@@ -1196,3 +1196,7 @@ iframe {
 	font-size: 24px !important;
 	text-decoration: none !important;
 }
+
+.abh_description.note span {
+	display: none;
+}

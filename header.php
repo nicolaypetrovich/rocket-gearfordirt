@@ -30,6 +30,13 @@ bloginfo('charset'); ?>">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5141329207929689",
+          enable_page_level_ads: true
+     });
+</script>
 <?php
 
 wp_head(); ?>

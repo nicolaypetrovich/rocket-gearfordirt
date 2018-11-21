@@ -39,7 +39,7 @@
 
 <div class="footer-1">
 
-    <div class="footer-copy">Copyright 2018 Gearfordirt.com </div>
+    <div class="footer-copy">Copyright 2018 Themotocrosslife.com </div>
     <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=rlrAtfS3u0dQUSyQvoIlmLFxkXwCfyFPyWDXJrZzqFk65ggek6FJ10JwGdSu"></script></span>
               <?php
 
